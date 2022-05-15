@@ -79,38 +79,7 @@
  $secondDate = new DateTime("$año2-$mes2-$dia2");
  $intvl = $firstDate->diff($secondDate);
  $respuesta = (($intvl->y) *(365) + (($intvl->m)*(30)) + ($intvl->d) ) ." dias"; 
- $bisiesto = $respuesta/1460 ;
-   if ($bisiesto === 1)  {
-$respuesta = $respuesta +1 ;
-  }
-elseif ($bisiesto === 2)   {
-    $respuesta = $respuesta +2 ;
-  }
-elseif ($bisiesto === 3)   {
-    $respuesta = $respuesta +3 ;
-  }
-elseif ($bisiesto === 4)   {
-    $respuesta = $respuesta +4 ;
-  }
- elseif ($bisiesto === 5)  {
-    $respuesta = $respuesta +5 ;
-  }
-elseif ($bisiesto === 6)   {
-    $respuesta = $respuesta +6 ;
-  }
-elseif ($bisiesto === 7)   {
-    $respuesta = $respuesta +7 ;
-  }
-elseif ($bisiesto === 8)   {
-    $respuesta = $respuesta +8 ;
-  }
-elseif ($bisiesto === 9)   {
-    $respuesta = $respuesta +9 ;
-  }
- elseif ($bisiesto === 10) {
-    $respuesta = $respuesta +10 ;
-  }
-                                     
+ $bisiesto = $respuesta/1460 ;                                 
 print("Los días de diferencia son: ".$respuesta);
  print("\n");
                                     
